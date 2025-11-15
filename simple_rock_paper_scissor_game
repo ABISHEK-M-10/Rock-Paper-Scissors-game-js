@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock paper scissors</title>
+</head>
+<body>
+  <button
+  onclick="
+  const changetime = Math.random();
+  
+  const time = (changetime>=0 && changetime<1/3)?'Rock':(changetime>=1/3 && changetime<1/2)?'Paper':'Scissors';
+
+  const winner = (time==='Rock')?'tie.':(time==='Paper')?'you lose.':'you win.';
+
+  console.log(alert(`my data is Rock,computer data is ${time} and ${winner}`));
+  ">
+    Rock
+  </button>
+  <button
+  onclick="
+  const changetime = Math.random();
+  
+  const time = (changetime>=0 && changetime<1/3)?'Rock':(changetime>=1/3 && changetime<1/2)?'Paper':'Scissors';
+
+  const winner = (time==='Paper')?'tie.':(time==='Scissors')?'you lose.':'you win.';
+
+  console.log(alert(`my data is Paper,computer data is ${time} and ${winner}`));
+  ">
+    paper
+  </button>
+  <button
+  onclick="
+  const changetime = Math.random();
+  
+  const time = (changetime>=0 && changetime<1/3)?'Rock':(changetime>=1/3 && changetime<1/2)?'Paper':'Scissors';
+
+  const winner = (time==='Scissors')?'tie.':(time==='Rock')?'you lose.':'you win.';
+
+  console.log(alert(`my data is Rock,computer data is ${time} and ${winner}`));
+  ">
+    scissors
+  </button>
+  <script>
+  </script>
+</body>
+</html>
